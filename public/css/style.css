@@ -38,8 +38,8 @@ body, html {
 }
 
 .navbar {
-	position: absolute !important;
-	top:0;
+/*	position: absolute !important;
+*/	top:0;
 }
 
 #navbar-contents {
