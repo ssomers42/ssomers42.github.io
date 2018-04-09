@@ -23,6 +23,8 @@ body, html {
 #name {
 	/*color: #ffe500eb;*/
 	color:#428bca;
+	margin-top: 1.5em;
+	margin-bottom: .75em;
 }
 
 #description {
@@ -277,6 +279,7 @@ img {
 
 #contactInfo {
 	display: flex;
+	margin: .5em;
 	justify-content: center;
 }
 
