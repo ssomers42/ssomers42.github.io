@@ -3,7 +3,11 @@ body, html {
 }
 
 .introWrapper {
-	min-height:100vh;
+	min-height:70vh;
+}
+
+.when2buyWrapper {
+	margin-top: 3em;
 }
 
 .indexTitleText {
