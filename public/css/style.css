@@ -51,6 +51,7 @@ body, html {
 	font-size: 30px;
 	margin: 0px 1em;
 	color: rgba(0,0,0,0.8);
+
 }
 
 li:last-child a{
@@ -184,6 +185,10 @@ li:last-child a{
 	height: 100vh;
 }
 
+.aboutWrapper {
+	height: 100vh;
+}
+
 .row {
 	max-width: 100%;
 }
@@ -196,6 +201,7 @@ img {
 
 .imageWrapper {
 	max-height: 100%;
+	margin-top: 2em;
 }
 
 .contentWrapper {
@@ -230,11 +236,16 @@ img {
 .caption {
 	font-style: italic;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 2em;
 }
 
 #when2buyBtn {
-	margin-top: 15px;
+	margin: 30px;
+}
+
+.marketTool {
+	margin-top: 3em;
+	margin-bottom: 1.5em;
 }
 
 .bold {
@@ -278,4 +289,22 @@ img {
 
 #contactInfo span:last-child {
 	border-width: 0	;
+}
+
+.footer {
+	background-color: rgba(0,0,0,0.8);
+	min-height: 50px;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	vertical-align: middle;
+	margin-top: 3em;
+	position: sticky;
+	bottom: 0;
+}
+
+.footer-content {
+	color: white;
+	padding: 30px;
+	align-self: center;
 }
