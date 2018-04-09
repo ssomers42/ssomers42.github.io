@@ -17,7 +17,8 @@ body, html {
 }
 
 #name {
-	color: #ffe500eb;
+	/*color: #ffe500eb;*/
+	color:#428bca;
 }
 
 #description {
@@ -183,9 +184,98 @@ li:last-child a{
 	height: 100vh;
 }
 
-.cchWrapper {
+.row {
+	max-width: 100%;
 }
 
-.when2buyWrapper {
+img {
+	max-height: 250px;
+	width: auto;
+	max-width: 100%;
+}
 
+.imageWrapper {
+	max-height: 100%;
+}
+
+.contentWrapper {
+	margin: 0 20%;
+	font-family: 'Latos', sans-serif;
+	font-size: 15px;
+}
+
+.contentWrapper h4 {
+	font-weight: bold;
+	border: 1px solid black;
+	border-width: 1px 0 0 0;
+	border-color: rgba(0,0,0,0.6);
+	padding-top:10px;
+}
+.contentWrapper h4:first-of-type {
+	border-width: 0;
+}
+
+.resumeSection h5 {
+	font-weight: bold;
+} 
+
+.resumeSection h5 span {
+	font-weight: normal;
+} 
+
+.date {
+	float:right;
+}
+
+.caption {
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#when2buyBtn {
+	margin-top: 15px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bullet {
+	margin-left: -20px;
+}
+
+.pic {
+	display: flex;
+	flex-direction: column;
+}
+
+.pic img {
+	align-self: center;
+}
+
+@media screen and (max-width: 992px) {
+	.contentWrapper {
+		margin: 0 10%;
+	}
+}
+
+#contactInfo {
+	display: flex;
+	justify-content: center;
+}
+
+#contactInfo span {
+	border: 1px solid black;
+	border-width: 0 1px 0 0;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+#download {
+	width: 100%;
+}
+
+#contactInfo span:last-child {
+	border-width: 0	;
 }
