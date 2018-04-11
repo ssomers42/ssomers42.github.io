@@ -1,23 +1,24 @@
 body, html {
 	height: 100%;
-	background-color: #fbffe0 !important;
+	/*background-color: #fbffe0 !important;*/
+	background-color: #F0F7F4 !important;
 }
 
 .introWrapper {
 	min-height: 560px;
 	height: 90vh;
-	background-color:#fbffe0;
+	background-color:#F0F7F4;
 }
 
 .when2buyWrapper {
 }
 
 .resumeWrapper {
-	background-color: #fbffe0;
+	background-color: #F0F7F4;
 }
 
 .aboutWrapper {
-	background-color: #fbffe0;
+	background-color: #F0F7F4;
 }
 
 .aboutWrapper p {
@@ -125,7 +126,7 @@ li:last-child a{
 #navbar-contents.show {
 	padding-left: 0;
 	padding-right: 0;
-	background-color: #fbffe0;
+	background-color: #F0F7F4;
 	margin-bottom: -100px;
 }
 
@@ -417,6 +418,10 @@ img {
 	font-size: 25px;
     font-family: 'Raleway', sans-serif;
     color: black;
+}
+
+.half-row {
+	min-height: 430px;
 }
 
 @media screen and (min-width: 1166px) {
