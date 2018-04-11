@@ -328,6 +328,8 @@ img {
 
 .full-height {
 	min-height: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 .cchContent p {
@@ -446,4 +448,12 @@ img {
 .aboutNav {
 	background-color: #dbf2ff;
 	margin-bottom: 0 !important;
+}
+
+.row:before {
+	display:inline-block !important;
+}
+
+.row:after {
+	display: inline-block !important;
 }
