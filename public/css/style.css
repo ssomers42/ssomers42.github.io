@@ -1,15 +1,24 @@
 body, html {
 	height: 100%;
+	background-color: #fbffe0 !important;
 }
 
 .introWrapper {
+	min-height: 560px;
 	height: 90vh;
+	background-color:#fbffe0;
 }
 
 .when2buyWrapper {
-	margin-top: 3em;
 }
 
+.resumeWrapper {
+	background-color: #fbffe0;
+}
+
+.aboutWrapper {
+	background-color: #fbffe0;
+}
 .indexTitleText {
 	text-align:center;
 	color:black;
@@ -25,10 +34,15 @@ body, html {
 	color:#428bca;
 	margin-top: 1.5em;
 	margin-bottom: .75em;
+	font-family: 'Raleway', sans-serif;
 }
 
 #description {
 	margin-bottom: 10%;
+}
+
+.resumeSection h2 {
+	font-family: 'Raleway', sans-serif;
 }
 
 #workButton {
@@ -38,6 +52,10 @@ body, html {
 	background-color: #ffe500eb;
 	color:black;
 	font-weight: bold;
+}
+
+.workButton {
+	margin-top: 1em;
 }
 
 .navbar {
@@ -100,7 +118,7 @@ li:last-child a{
 #navbar-contents.show {
 	padding-left: 0;
 	padding-right: 0;
-	background-color: rgba(255,255,255,0.9);
+	background-color: #fbffe0;
 	margin-bottom: -100px;
 }
 
@@ -187,9 +205,9 @@ li:last-child a{
 	}
 }
 
-.workWrapper {
+/*.workWrapper {
 	height: 100%;
-}
+}*/
 
 .aboutWrapper {
 	min-height: 100%;
@@ -197,6 +215,23 @@ li:last-child a{
 
 .row {
 	max-width: 100%;
+	margin:0 !important;
+}
+
+.center-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 !important;
+}
+
+.blue-background {
+	background-color: #428bca;
+}
+
+.yellow-background {
+	/*background-color: #ffc107;*/
+	background-color: #bf9927;
 }
 
 img {
@@ -258,6 +293,30 @@ img {
 
 .bold {
 	font-weight: bold;
+	color: black;
+}
+
+.full-height {
+	min-height: 100%;
+}
+
+.cchContent p {
+	color: white;
+	font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.when2buyContent p {
+	color: white;
+	    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-pill {
+	border-color: white !important;
+    color: white;
+    background-color: rgba(0,0,0,.2);
+    border-width: 2px !important;
 }
 
 .bullet {
@@ -323,4 +382,29 @@ img {
 	color: white;
 	padding: 30px;
 	align-self: center;
+}
+
+.workTitle {
+	font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+@media screen and (min-width: 1166px) {
+	.half-row {
+		height: 50vh;
+	}
+}
+
+@media screen and (max-width: 1166px) {
+	.btn-pill {
+	    margin-bottom: 30px !important;
+	}
+}
+
+@media screen and (max-width: 396px) {
+	.footer-content {
+		padding: 15px;
+	}
+
 }
