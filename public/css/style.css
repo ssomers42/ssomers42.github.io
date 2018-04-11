@@ -19,6 +19,13 @@ body, html {
 .aboutWrapper {
 	background-color: #fbffe0;
 }
+
+.aboutWrapper p {
+	margin-left: 50%;
+	margin-right: 5%;
+	color: black;
+}
+
 .indexTitleText {
 	text-align:center;
 	color:black;
@@ -209,8 +216,30 @@ li:last-child a{
 	height: 100%;
 }*/
 
+/*.aboutWrapper {
+	    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    padding-bottom: calc(110px + 3em);
+    min-height: calc(100% - 142px);
+    background: url("../images/image2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
 .aboutWrapper {
-	min-height: 100%;
+	height: 100%;
+}
+
+.aboutContent {
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+}
+
+@media screen and (max-width: 991px) {
+	.aboutPic {
+		padding: 0 !important;
+	}
 }
 
 .row {
@@ -407,4 +436,9 @@ img {
 		padding: 15px;
 	}
 
+}
+
+.aboutNav {
+	background-color: #dbf2ff;
+	margin-bottom: 0 !important;
 }
