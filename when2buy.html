@@ -43,8 +43,122 @@
 			</div>
 		</nav>
 		<div class="contentWrapper">
+			<div id="cchIntro">
+				<h1 class="workHeader" align="center"> When2Buy </h1>
+				<h2> Overview </h2>
+				<p>This was a ten week design project for my Interaction Design course at UCSD. This responsive web application is used to simplify the group shopping experience for college students with a shareable shopping list. This project includes storyboards, A/B testing
+				</p>
+				<p><span class="bold">My Role: </span> Full Development </p> 
+				<p><span class="bold">Tools: </span>HTML, CSS, JS, Google Analytics (A/B Testing), Marvel(lo-fi prototypes) , pen & paper (paper prototypes/storyboarding). </p>
+				<p><span class="bold">The Problem: </span>As a college student I live with multiple roommates and we all share groceries. We use a whiteboard on the fridge to let each other know what we need to buy. On multiple occasions two different roommates would return home after a spontaneous grocery run to find out that another roommate had already made the trip.</p> 
+				<p><span class="bold">My Solution: </span> When2Buy is a shopping list application that allows multiple users to collaborate on the same list by generating a shareable url. This list also allows for easy creation through the suggested items section which is populated by recently bought items.</p> 
+			</div>
+			<div id="process">
+				<h2> The Process </h2>
+				<h4> Storyboarding</h4>
+				<p>To get an idea of typical use cases for the application I began the design process with storyboarding to get an idea of typical use cases for the product. Three storyboard scenarios were created.</p>
+				<ol>
+					<li> A user wants notifications when it's time to buy more of an item. </li>
+					<li> Roommates want to collaborate on a list and be notified when the list is updated by another user. </li>
+					<li> A person planning a party and wants food suggestions from guests so they send out a shareable link </li>
+				</ol>
+				<div class="imageWrapper" align="center">
+					<img src="public/images/storyboard.jpg" >
+					<p class="caption"> Storyboard Scenario #1 </p>
+				</div>
+				<h4>Paper Prototypes</h4>
+				<p>My next step was paper prototyping. After making a basic sitemap, the initial paper prototypes involved three main user pathways. Creating a list, viewing a list, or sharing a list. In these prototypes each item on a list had its own reminder date as well as the date it was last bought.</p>
+				<div class="container"> 
+				  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner">
+				      <div class="item active">
+				        <img src="public/images/when2buyNotification.jpg">
+				      </div>
+				      <div class="item">
+				        <img src="public/images/when2buyHome.jpg">
+				      </div>
+				    	<div class="item">
+				        <img src="public/images/when2buyView.jpg">
+				      </div>
+				      <div class="item">
+				        <img src="public/images/when2buyList.jpg">
+				      </div>
+				      <div class="item">
+				        <img src="public/images/when2buyCreate.jpg">
+				      </div>
+				      <div class="item">
+				        <img src="public/images/when2buyShare.jpg">
+				      </div>
+				    </div>
 
-		</div>
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				      <span class="glyphicon glyphicon-chevron-left"></span>
+				      <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				      <span class="glyphicon glyphicon-chevron-right"></span>
+				      <span class="sr-only">Next</span>
+				    </a>
+				  </div>
+				</div>
+				</div>
+				<h4> Rapid Prototyping </h4>
+				<p>After our initial ideating and research process we began paper prototyping. From talking more with our clients, they discussed two core functionalities essential to the design: a datatable displaying all of the markets and their information, as well as some sort of way to visualize the data. From this information we came up a with multiple paper prototypes to get our thoughts down on paper. From these initial prototypes we discussed which ideas we were going to keep and came up with two different options, a horizontal view which stacked the market profiles and the vertical view which places the market profile side-by-side with the datatable. After getting our initial ideas down on paper we made rapid low fidelity prototypes using Photoshop and Marvel. We then met with our client to go over what we had created and get their feedback as to which view they preferred and possible changes they would like to make.</p>
+				<div class="row imageWrapper">
+					<div class="col-lg-6 pic">
+						<img src="public/images/paperProto.png">
+						<p class="caption"> Paper Prototypes </p>
+					</div>
+					<div class="col-lg-6 pic">
+						<img src="public/images/loFiProto.png">
+						<p class="caption"> Low-Fidelity Prototypes </p>
+					</div>
+				</div>
+				<h4> Initial Feedback </h4>
+				<p>We met with the CCH staff to discuss our current work and gave them interactive low-fidelity prototypes to test. From this testing we looked to gain insight on preferred view(horizontal or vertical), additional desired functionality, their thoughts on the methods of displaying data, and to ensure the prototype was intuitive. Our results were inconclusive on preferred view, so moving forward our next prototypes would include both views. From this testing we generated an additional list of features to be added for our next iteration: </p>
+				<ul>
+					<li>Specific market requirements checklist</li>
+					<li>Data table search market by address</li>
+					<li>A way to visualize location</li>
+					<li>Data table filters</li>
+				</ul>
+				<h4> High Fidelity Prototyping </h4>
+				<p> After meeting with the back-end team and determining the desires would all be feasible, we used our client’s feedback to redesign the user interface. The changes that we made from what we learned at the meeting included: a more in-depth market profile including a checklist detailing the requirements each market has met and still needs to complete, a more visible search bar, a google maps view for the markets including pins color-coordinated to their location, including filters for both the data table as well as the pie chart. </p>
+				<div class="row imageWrapper">
+					<div class="col-lg-6 pic">
+						<img src="public/images/hiFiProto1.png">
+						<a class="caption" href="https://projects.invisionapp.com/share/8NFWVEOSR7F#/screens/280020605"> Click here for link to interactive prototype </a>
+					</div>
+					<div class="col-lg-6 pic">
+						<img src="public/images/hiFiProto2.png">
+						<a class="caption" href="https://projects.invisionapp.com/share/8NFWVEOSR7F#/screens/280020606"> Click here for link to interactive prototype </a>
+					</div>
+				</div>
+				<h4> User Testing - More Feedback </h4>
+				<p>After creating the high-fidelity prototypes using Figma we began a round of user testing. The user testing involved our primary stakeholders, CCH staff, as well as various students around the UCSD campus that would be representative of our client’s student interns. We did our best to choose users that were of similar tech fluency as our client and their staff. From this phase of user-testing we had two main takeaways. </p>
+				<ol>
+					<li> The filters were unintuitive - our users expected both the data table as well as the pie chart to be affected once the filters were applied.</li>
+					<li>The vertical view was preferred - The horizontal view wasted space with the dashboard taking up the majority of the screen when the datatable was almost always the first component the user would look for.</li>
+				</ol>
+				<div class="imageWrapper" align="center">
+					<img src="public/images/users.png">
+					<p class="caption">CCH Staff testing the high-fidelity interactive prototypes </p>
+				</div>
+				<h4> Final Design Decisions </h4>
+				<p> Once the preferred view had been chosen our team made final design decisions before implementation.In the final product we made the decision to put the search bar and filters on the same line that took up its own row above both the data table and dashboard. This decision both saved space by utilizing one line instead of two, as well as made it more intuitive that the filters would be applied to all elements on the screen. Our team also made the decision to swap the dashboard filters out with an option to toggle the view method instead, for example you can view by levels or by store type. This component was placed within the borders of the dashboard on the right to signify to the user that it would affect only elements within the dashboard. When the view is toggled it affects both the pie chart and the google maps view. </p>
+				<h4> Implementation </h4>
+				<p>My personal role in the implementation was using HTML and CSS to build the header, about page, contact page, and organize all elements on the home page, use JS to manage the tab creation when a market was clicked, and I was responsible for making the full application mobile-friendly. We re-evaluated our final product to ensure we met the design requirements we initially set. The product is functional, the web application immediately classifies markets and allows for multiple concurrent users. It is flexible, we provided full documentation, including a video tutorial, for how to upload a new survey rubric should they decide to change it.The finished product utilizes the free web-hosting service heroku to maintain affordability. It is mobile-friendly meaning it is accessible should the staff choose to expand their user base to market owners or consumers. Finally the application proved to be usable throughout user-testing including with users of lower-than-average tech literacy. </p>
+				<h4> Takeaway </h4>
+				<p>Overall, our client was very pleased with our finished product and emphasized the impact the application will have on not only her organization but also in increasing the access to fresh produce in underserved areas of San Diego. As a result of this experience I learned the importance of gaining outside perspective through user-testing. We had many rounds of user-testing and in each I was able to gain more insight as to the way the users expected the product to function. Oftentimes as a designer we project our own framework and expectations onto our work and it can be difficult to think of other possible use cases. This is why I firmly believe in the importance of the human-centered design process.</p>
+			</div>
+			<div class="imageWrapper" align="center">
+				<img src="public/images/cchApp.png"><br>
+				<a class="caption" href="http://cch100d.herokuapp.com"> Link to CCH Market Assessment Tool </a><br>
+				<a align="center" href="/when2buy.html" class="btn btn-primary" id="when2buyBtn"> Check out my other work here </a>
+			</div>
+		</div><!-- end contentWrapper -->
 		<footer>
 			<div class="container-fluid footer"> 
 				<div class="footer-content">

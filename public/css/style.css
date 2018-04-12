@@ -19,11 +19,15 @@ body, html {
 
 .aboutWrapper {
 	background-color: #F0F7F4;
+	min-height: 100%;
 }
 
 .aboutWrapper p {
-	margin-left: 50%;
-	margin-right: 5%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-bottom: 3em;
 	color: black;
 }
 
@@ -316,9 +320,13 @@ img {
 	margin: 30px;
 }
 
-.marketTool {
+.workHeader {
 	margin-top: 3em;
 	margin-bottom: 1.5em;
+}
+
+.container {
+	width: 187.5px !important;
 }
 
 .bold {
@@ -402,6 +410,12 @@ img {
 	position: relative;
 }
 
+.aboutFooter {
+	margin-top: 3em;
+	position: relative;
+	bottom: 0;
+}
+
 .indexFooter {
 	background-color: rgba(0,0,0,0.8);
 	display:flex;
@@ -451,11 +465,11 @@ img {
 }
 
 .row:before {
-	display:inline-block !important;
+	display:flex !important;
 }
 
 .row:after {
-	display: inline-block !important;
+	display: flex !important;
 }
 
 .rowSafari {
