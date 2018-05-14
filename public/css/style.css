@@ -411,8 +411,8 @@ img {
 
 .aboutFooter {
 	margin-top: 3em;
-	position: relative;
-	bottom: 0;
+	position: absolute;
+	bottom: 0 !important; 
 }
 
 .indexFooter {
