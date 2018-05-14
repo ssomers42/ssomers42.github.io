@@ -19,7 +19,6 @@ body, html {
 
 .aboutWrapper {
 	background-color: #F0F7F4;
-	min-height: 100%;
 }
 
 .aboutWrapper p {
@@ -194,6 +193,10 @@ li:last-child a{
 }
 
 @media screen and (max-width: 768px) {
+	.aboutWrapper p {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 	#navbar-contents {
 		width:100%;
 		flex-basis: 0;
@@ -231,10 +234,6 @@ li:last-child a{
     background-repeat: no-repeat;
     background-size: cover;
 }*/
-
-.aboutWrapper {
-	height: 100%;
-}
 
 .aboutContent {
 	background-color: rgba(0,0,0,0.3);
