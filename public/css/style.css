@@ -208,6 +208,7 @@ li:last-child a{
 
 @media screen and (max-width: 768px) {
 	.aboutWrapper p {
+		font-size: 24px;
 		margin-left: 10%;
 		margin-right: 10%;
 	}
@@ -438,13 +439,19 @@ img {
 	justify-content: center;
 	vertical-align: middle;
 	margin-top: -110px;
-	position: relative;
+	/*position: relative;*/
 }
 
 .aboutFooter {
 	margin-top: 3em;
-	/*position: absolute;*/
+	position: relative;
 	bottom: 0 !important; 
+}
+
+@media screen and (min-width: 1280px) {
+	.aboutFooter {
+		position: absolute;
+	}
 }
 
 .indexFooter {
