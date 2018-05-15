@@ -261,9 +261,20 @@ li:last-child a{
 	}
 }
 
+
+.row-padding {
+	padding: 0 10em;
+}
+
 .row {
 	max-width: 100%;
 	margin:0 !important;
+}
+
+@media screen and (max-width: 750px) {
+	.row-padding {
+		padding: 0 20px;
+	}
 }
 
 .center-content {
@@ -291,8 +302,8 @@ li:last-child a{
 }
 
 .work-image {
- max-height: none;
- max-width:100%;
+ max-height: 700px;
+ max-width:90%;
 }
 
 .imageWrapper {
@@ -439,6 +450,10 @@ img {
 	#contactInfo {
 		display:none;
 	}
+
+	.row-padding {
+		padding: 0 10px;
+	}
 }
 
 
@@ -520,7 +535,7 @@ img {
 
 @media screen and (max-width: 400px) {
 	.workTitle {
-		font-size: 59px;
+		font-size: 50px;
 	}
 }
 
