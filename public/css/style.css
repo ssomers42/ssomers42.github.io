@@ -443,7 +443,7 @@ img {
 
 .aboutFooter {
 	margin-top: 3em;
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 0 !important; 
 }
 
