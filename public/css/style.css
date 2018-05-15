@@ -1,24 +1,36 @@
 body, html {
 	height: 100%;
 	/*background-color: #fbffe0 !important;*/
-	background-color: #F0F7F4 !important;
+	background-color: ##fdfdfd !important;
 }
 
 .introWrapper {
 	min-height: 560px;
 	height: 90vh;
-	background-color:#F0F7F4;
+	background-color:##fdfdfd;
+}
+
+.cchWrapper {
+	background-color: #73BFB8
 }
 
 .when2buyWrapper {
+	/*background-color: #428bca;*/
+	/*background-color: #5C6F68;*/
+	background-color: #BF4E30;
 }
 
 .resumeWrapper {
-	background-color: #F0F7F4;
+	background-color: ##fdfdfd;
 }
 
 .aboutWrapper {
-	background-color: #F0F7F4;
+	background-color: ##fdfdfd;
+}
+
+.yompWrapper {
+	
+		background-color: #CAD178;
 }
 
 .aboutWrapper p {
@@ -42,7 +54,7 @@ body, html {
 
 #name {
 	/*color: #ffe500eb;*/
-	color:#428bca;
+	color:#73BFB8;
 	margin-top: 1.5em;
 	margin-bottom: .75em;
 	font-family: 'Raleway', sans-serif;
@@ -67,6 +79,8 @@ body, html {
 
 .workButton {
 	margin-top: 1em;
+	margin-bottom: 80px !important;	
+	font-size: 24px !important;	
 }
 
 .navbar {
@@ -129,7 +143,7 @@ li:last-child a{
 #navbar-contents.show {
 	padding-left: 0;
 	padding-right: 0;
-	background-color: #F0F7F4;
+	background-color: ##fdfdfd;
 	margin-bottom: -100px;
 }
 
@@ -258,19 +272,32 @@ li:last-child a{
 	padding: 0 !important;
 }
 
+.left-content {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 0 !important;
+}
+
 .blue-background {
 	background-color: #428bca;
 }
 
 .yellow-background {
 	/*background-color: #ffc107;*/
-	background-color: #bf9927;
+	/*background-color: #bf9927;*/
+	background-color: #73BFB8;
+}
+
+.work-image {
+ max-height: none;
+ max-width:100%;
 }
 
 img {
 	max-height: 250px;
 	width: auto;
-	max-width: 100%;
+	/*max-width: 100%;*/
 }
 
 .imageWrapper {
@@ -336,18 +363,23 @@ img {
 .full-height {
 	min-height: 100%;
 	height: 100%;
-	width: 100%;
 }
 
 .cchContent p {
 	color: white;
-	font-size: 18px;
+	font-size: 24px;
     font-family: 'Raleway', sans-serif;
 }
 
 .when2buyContent p {
 	color: white;
-	    font-size: 20px;
+	    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.yompContent p {
+	color: white;
+	    font-size: 24px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -430,9 +462,11 @@ img {
 }
 
 .workTitle {
-	font-size: 25px;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	font-size: 64px;
     font-family: 'Raleway', sans-serif;
-    color: black;
+    color: white;
 }
 
 .half-row {
@@ -441,7 +475,7 @@ img {
 
 @media screen and (min-width: 1166px) {
 	.half-row {
-		height: 50vh;
+		/*height: 50vh;*/
 	}
 }
 
