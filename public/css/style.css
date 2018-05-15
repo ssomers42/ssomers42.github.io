@@ -406,12 +406,6 @@ img {
 	align-self: center;
 }
 
-@media screen and (max-width: 992px) {
-	.contentWrapper {
-		margin: 0 10%;
-	}
-}
-
 #contactInfo {
 	display: flex;
 	margin: .5em;
@@ -424,6 +418,29 @@ img {
 	padding-right: 3px;
 	padding-left: 3px;
 }
+
+@media screen and (max-width: 992px) {
+	.contentWrapper {
+		margin: 0 10%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.resume {
+		margin: 0 5%;
+	}
+}
+
+@media screen and (max-width: 578px) {
+	.resume {
+		margin: 0 10;
+	}
+
+	#contactInfo {
+		display:none;
+	}
+}
+
 
 #download {
 	width: 100%;
