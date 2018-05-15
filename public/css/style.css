@@ -206,7 +206,7 @@ li:last-child a{
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.aboutWrapper p {
 		font-size: 24px;
 		margin-left: 10%;
@@ -516,6 +516,12 @@ img {
 		padding: 15px;
 	}
 
+}
+
+@media screen and (max-width: 400px) {
+	.workTitle {
+		font-size: 59px;
+	}
 }
 
 .aboutNav {
