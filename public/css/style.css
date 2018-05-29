@@ -99,7 +99,7 @@ body, html {
 	font-family: 'Lato', sans-serif;
 	font-size: 30px;
 	margin: 0px 1em;
-	color: rgba(0,0,0,0.8);
+	color: #9e9e9e;
 
 }
 
@@ -150,7 +150,7 @@ li:last-child a{
 .logo a h1{
 	line-height: 1;
 	margin: 0;
-	color: black;
+	color: #9e9e9e;
 }
 
 .logo a:hover {
@@ -202,7 +202,7 @@ li:last-child a{
 
 @media screen and (min-width: 768px) {
 	a.active {
-	border-bottom: solid 4px black;
+	border-bottom: solid 4px #00BBF0;
 	}
 }
 
@@ -219,7 +219,7 @@ li:last-child a{
 
 	.show ul li {
 		width: 100%;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid #9e9e9e;
 	}
 
 	.show ul li a {
@@ -227,7 +227,7 @@ li:last-child a{
 	}
 
 	a.active {
-		border-left: solid 5px black;
+		border-left: solid 5px #00BBF0;
 	}
 
 	.header-wrapper {
