@@ -105,32 +105,63 @@
 				</div>
 				</div>
 				<h4> Digital Mockup & User Feedback </h4>
-				<p>After getting the initial application structure down on paper I moved on to create a low fidelity prototype using Balsamiq. My goal for this phase was to create something that would clearly convey the interactions for the user but would also be easy to remake. </p>
+				<p>After getting the initial application structure down on paper I transferred them onto Balsamiq for easy user testing. For user testing I had each user think aloud as they walked through the task of first creating a list, adding an item to the list, and lastly sharing the list. After testing on various users there were three main takeaways. </p> 
+				<ol>
+					<li> Users preferred a "due date" on an overall shopping list rather than each individual item.</li>
+					<li> The process could be simplified by removing the share screen and adding a share button to each individual list.</li>
+					<li> Users wanted a two-step process to removing items from the list. First crossing them out then removing them all at once.</li>
+				</ol>
+				<p>The low-fidelity digital mockup can be seen below reflecting these changes. </p>
 				<div class="imageWrapper" align="center">
 					<img src="public/images/balsamiq.png">
-					<p class="caption"> Low fidelity mockup </p>
+					<p class="caption"> Low fidelity mockup with user feedback implemented. </p>
 				</div>
-				<h4> User Testing </h4>
-				<p>After creating the high-fidelity prototypes using Figma we began a round of user testing. The user testing involved our primary stakeholders, CCH staff, as well as various students around the UCSD campus that would be representative of our client’s student interns. We did our best to choose users that were of similar tech fluency as our client and their staff. From this phase of user-testing we had two main takeaways. </p>
-				<ol>
-					<li> The filters were unintuitive - our users expected both the data table as well as the pie chart to be affected once the filters were applied.</li>
-					<li>The vertical view was preferred - The horizontal view wasted space with the dashboard taking up the majority of the screen when the datatable was almost always the first component the user would look for.</li>
-				</ol>
+				<h4> Analytics of MVP- A/B Testing </h4>
+				<p>After receiving feedback on the low-fidelity prototype I began coding the application using HTML, CSS, and JS. I formulated a hypothesis that the current location of the New Item/Share buttons would be better located at the bottom of the screen. My reasoning for this was that although the buttons may be more visible at the top of the screen, on a mobile device they would be more accessible to users when located at the bottom, within the range of the user's thumb. I created two different screen that users would be redirected to randomly and shared my heroku url on social media pages designated for college students to better represent my target demographic. As shown in the figure below, the app received total pageviews with 105 of these being unique users. List A - the view hypothesized to be more efficient with the buttons at the bottom of the screen had a conversion rate of 57.14%. List B - the original view with the buttons at the top had an observed conversion rate of 41.18%.  </p>
 				<div class="imageWrapper" align="center">
-					<img src="public/images/users.png">
-					<p class="caption">CCH Staff testing the high-fidelity interactive prototypes </p>
+					<img src="public/images/analytics1.png">
+					<p class="caption"> Google analytics A/B test on MVP with 105 unique pageviews.</p>
 				</div>
-				<h4> Final Design Decisions </h4>
-				<p> Once the preferred view had been chosen our team made final design decisions before implementation.In the final product we made the decision to put the search bar and filters on the same line that took up its own row above both the data table and dashboard. This decision both saved space by utilizing one line instead of two, as well as made it more intuitive that the filters would be applied to all elements on the screen. Our team also made the decision to swap the dashboard filters out with an option to toggle the view method instead, for example you can view by levels or by store type. This component was placed within the borders of the dashboard on the right to signify to the user that it would affect only elements within the dashboard. When the view is toggled it affects both the pie chart and the google maps view. </p>
-				<h4> Implementation </h4>
-				<p>My personal role in the implementation was using HTML and CSS to build the header, about page, contact page, and organize all elements on the home page, use JS to manage the tab creation when a market was clicked, and I was responsible for making the full application mobile-friendly. We re-evaluated our final product to ensure we met the design requirements we initially set. The product is functional, the web application immediately classifies markets and allows for multiple concurrent users. It is flexible, we provided full documentation, including a video tutorial, for how to upload a new survey rubric should they decide to change it.The finished product utilizes the free web-hosting service heroku to maintain affordability. It is mobile-friendly meaning it is accessible should the staff choose to expand their user base to market owners or consumers. Finally the application proved to be usable throughout user-testing including with users of lower-than-average tech literacy. </p>
-				<h4> Takeaway </h4>
-				<p>Overall, our client was very pleased with our finished product and emphasized the impact the application will have on not only her organization but also in increasing the access to fresh produce in underserved areas of San Diego. As a result of this experience I learned the importance of gaining outside perspective through user-testing. We had many rounds of user-testing and in each I was able to gain more insight as to the way the users expected the product to function. Oftentimes as a designer we project our own framework and expectations onto our work and it can be difficult to think of other possible use cases. This is why I firmly believe in the importance of the human-centered design process.</p>
-			</div>
-			<div class="imageWrapper" align="center">
-				<img src="public/images/cchApp.png"><br>
-				<a class="caption" href="http://cch100d.herokuapp.com"> Link to CCH Market Assessment Tool </a><br>
-				<a align="center" href="/when2buy.html" class="btn btn-primary" id="when2buyBtn"> Check out my other work here </a>
+				<h4>Finishing Design Choices & Takeaways</h4>
+				<p>After moving the buttons to be more accessible at the bottom of the screen I made more minor design fixes. I chose to remove the user icon and move the title on the homescreen further up because it was taking up valuable screen space. I added a themed image to the background and used an off-white color for the buttons to create a crisp, modern feel for the app. </p>
+
+				<div class="container"> 
+				  <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner">
+				      <div class="carousel-item active">
+				        <img src="public/images/beforeHome.png">
+				      </div>
+				      <div class="carousel-item">
+				        <img src="public/images/afterHome.png">
+				      </div>
+				    	<div class="carousel-item">
+				        <img src="public/images/beforeList.png">
+				      </div>
+				      <div class="carousel-item">
+				        <img src="public/images/afterList.png">
+				      </div>
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+				      <span class="glyphicon glyphicon-chevron-left"></span>
+				      <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control right2" href="#myCarousel2" data-slide="next">
+				      <span class="glyphicon glyphicon-chevron-right"></span>
+				      <span class="sr-only">Next</span>
+				    </a>
+				  </div>
+				</div>
+			  <p class="caption"> Before and after views of the list and home page </p>
+			  <p>This project was a great learning experience that helped my develop skills in A/B testing, user research, and refining my skills in HTML, CSS, and JS. This project is still a work in progress as the data is persistent across all versions. Further work will include implementing a database to create personalized accounts. If I were to do this project again I would take more time to develop a better A/B test and take more time documenting the project. </p>
+				<!-- <div class="imageWrapper" align="center"> -->
+				  <!-- <iframe src="http://when2buy.herokuapp.com" width="370px" height="667px" align="center" style="margin-left: 25%; margin-right:25%;"></iframe> -->
+				<!-- </div> -->
+				<br>
+				<a align="center" href="/cch-tool.html" class="btn btn-primary" id="when2buyBtn"> Link to Most Recent Version </a>
+				<a align="center" href="/cch-tool.html" class="btn btn-primary" id="when2buyBtn"> Check out my other work here </a>
 			</div>
 		</div><!-- end contentWrapper -->
 		<footer>

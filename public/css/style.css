@@ -17,7 +17,8 @@ body, html {
 .when2buyWrapper {
 	/*background-color: #428bca;*/
 	/*background-color: #5C6F68;*/
-	background-color: #00204A;
+	background-color: #005792;
+
 }
 
 .resumeWrapper {
@@ -29,8 +30,8 @@ body, html {
 }
 
 .yompWrapper {
-	
-		background-color: #005792;
+	background-color: #00204A;
+
 }
 
 .aboutWrapper p {
@@ -232,6 +233,10 @@ li:last-child a{
 
 	.header-wrapper {
 		width:100%;
+	}
+
+	iframe {
+		display: none;
 	}
 }
 
@@ -582,4 +587,8 @@ img {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+}
+
+.carousel-control.right2 {
+	left: 115px !important;
 }
