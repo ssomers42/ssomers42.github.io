@@ -62,7 +62,7 @@ body, html {
 }
 
 #description {
-	margin-bottom: 10%;
+	margin-bottom: 2%;
 }
 
 .resumeSection h2 {
@@ -70,12 +70,26 @@ body, html {
 }
 
 #workButton {
-	position: absolute;
-	bottom: 20%;
-	border: 1px solid #ffe500eb;
-	background-color: #ffe500eb;
-	color:black;
-	font-weight: bold;
+	background-color: #00BBF0;
+	margin-top: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px !important;
+	padding: 10px;
+	border-radius: 10px;
+	border: 0;
+	color: white;
+}
+
+#workButtonSmall {
+	margin-top: 20px;
+	display: none;
+	background-color: #00BBF0;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px !important;
+	padding: 10px;
+	border-radius: 10px;
+	border: 0;
+	color: white;
 }
 
 .workButton {
@@ -264,8 +278,24 @@ li:last-child a{
 	.aboutPic {
 		padding: 0 !important;
 	}
+	.navbar-item {
+		margin: 0 .4em;
+	}
 }
 
+@media screen and (max-width: 525px) {
+	.indexTitleText {
+		font-size: 38px;
+	}
+
+	#workButton {
+		display: none;
+	}
+
+	#workButtonSmall {
+		display: block;	
+	}
+}
 
 .row-padding {
 	padding: 0 10em;
