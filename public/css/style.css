@@ -80,7 +80,7 @@ body, html {
 	color: white;
 }
 
-#workButton a {
+#workButton a, #workButtonSmall a {
 	color: white;
 }
 
