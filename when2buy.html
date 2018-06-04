@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120237753-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-120237753-1', {
+		    'page_title' : 'when2buy',
+		  });
+		</script>
+		<script type="text/javascript">
+            function w2bCtaClick() {
+            	gtag('event', 'w2bCtaClick', {
+            	  'event_category': 'click',
+            	  'event_label': 'w2bCtaClick',
+            	});
+            };
+            function w2bPrototypeClick() {
+            	gtag('event', 'w2bPrototypeClick', {
+            	  'event_category': 'click',
+            	  'event_label': 'w2bPrototypeClick',
+            	});
+            };
+    </script>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -155,15 +180,14 @@
 				    </a>
 				  </div>
 				</div>
-			  <p class="caption"> Before and after views of the list and home page <br> <a align="center" href="http://when2buy.herokuapp.com" id="when2buyBtn"> Link to Most Recent Version </a>
- </p>
+			  <p class="caption"> Before and after views of the list and home page <br> <a align="center" href="http://when2buy.herokuapp.com" id="when2buyBtn" onclick="w2bPrototypeClick();"> Link to Most Recent Version </a></p>
 			  <p>This project was a great learning experience that helped my develop skills in A/B testing, user research, and refining my skills in HTML, CSS, and JS. This project is still a work in progress as the data is persistent across all versions. Further work will include implementing a database to create personalized accounts. If I were to do this project again I would take more time to develop a better A/B test and take more time documenting the project. </p>
 				<!-- <div class="imageWrapper" align="center"> -->
 				  <!-- <iframe src="http://when2buy.herokuapp.com" width="370px" height="667px" align="center" style="margin-left: 25%; margin-right:25%;"></iframe> -->
 				<!-- </div> -->
 				<br>
 				<div class="center-content">
-				<a align="center" href="/cch-tool.html" class="btn btn-primary" id="when2buyBtn"> Check out my other work here </a>
+				<a align="center" href="/cch-tool.html" class="btn btn-primary" id="when2buyBtn" onclick="w2bCtaClick();"> Check out my other work here </a>
 			</div>
 			</div>
 		</div><!-- end contentWrapper -->

@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120237753-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-120237753-1', {
+		    'page_title' : 'cch-tool',
+		  });
+		</script>
+		<script type="text/javascript">
+            function cchCtaClick() {
+            	gtag('event', 'cchCtaClick', {
+            	  'event_category': 'click',
+            	  'event_label': 'cchCtaClick',
+            	});
+            };
+            function cchPrototypeClick() {
+            	gtag('event', 'cchPrototypeClick', {
+            	  'event_category': 'click',
+            	  'event_label': 'cchPrototypeClick',
+            	});
+            };
+    </script>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -146,8 +171,8 @@
 		</div>
 		<div class="imageWrapper" align="center">
 			<img src="public/images/cchApp.png"><br>
-			<a class="caption" href="http://cch100d.herokuapp.com"> Link to CCH Market Assessment Tool </a><br>
-			<a align="center" href="/when2buy.html" class="btn btn-primary" id="when2buyBtn"> Check out my other work here </a>
+			<a class="caption" href="http://cch100d.herokuapp.com" onclick="cchPrototypeClick();"> Link to CCH Market Assessment Tool </a><br>
+			<a align="center" href="/when2buy.html" class="btn btn-primary" id="when2buyBtn" onclick="cchCtaClick();"> Check out my other work here </a>
 		</div>
 	</div><!-- end contentWrapper -->
 	<div class="container-fluid footer"> 
