@@ -34,6 +34,11 @@ body, html {
 
 }
 
+.index-image {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .aboutWrapper p {
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
