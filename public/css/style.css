@@ -555,15 +555,15 @@ img {
 
 .aboutFooter {
 	margin-top: 3em;
-	position: relative;
+	position: absolute;
 	bottom: 0 !important; 
 }
 
-@media screen and (min-width: 1280px) {
+/*@media screen and (min-width: 1280px) {
 	.aboutFooter {
 		position: absolute;
 	}
-}
+}*/
 
 .indexFooter {
 	background-color: rgba(0,0,0,0.8);
@@ -648,14 +648,19 @@ img {
 
 #contact {
 	background:#F9F9F9;
-	padding:25px;
+	/*padding:25px;*/
 	margin:50px 0;
+}
+
+form h1 {
+	font-family: 'Raleway', sans-serif;
+
 }
 
 #contact h1 {
 	color: #000;
 	display: block;
-	font-size: 40px;
+	font-size: 37px;
 	font-weight: 400;
 }
 
