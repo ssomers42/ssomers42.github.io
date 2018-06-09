@@ -7,9 +7,10 @@ body, html {
 .introWrapper {
 	/*min-height: 560px;*/
 	height: calc(90vh - 18px);
-	background-image: url(public/images/sprint2.png);
+	background-image: url(../images/sprint2.png);
     background-position-x: 50%;
     background-position-y:30%;
+    background-size: cover;
 }
 
 .cchWrapper {
