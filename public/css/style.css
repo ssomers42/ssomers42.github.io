@@ -7,7 +7,9 @@ body, html {
 .introWrapper {
 	/*min-height: 560px;*/
 	height: calc(90vh - 18px);
-	background-color:##fdfdfd;
+	background-image: url(public/images/sprint2.png);
+    background-position-x: 50%;
+    background-position-y:30%;
 }
 
 .cchWrapper {
@@ -50,7 +52,7 @@ body, html {
 
 .indexTitleText {
 	text-align:center;
-	color:black;
+	color:white;
 	font-size: 50px;
 }
 
