@@ -581,6 +581,11 @@ img {
 	margin-top: 3em;
 }
 
+.contactFooter {
+	position: absolute;
+	bottom: 0;
+}
+
 /*@media screen and (min-width: 1280px) {
 	.aboutFooter {
 		position: absolute;
