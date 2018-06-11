@@ -306,6 +306,9 @@ li:last-child a{
 	.navbar-item {
 		margin: 0 .4em;
 	}
+	.logo {
+		width: 200px;
+	}
 }
 
 @media screen and (max-width: 525px) {
@@ -761,5 +764,11 @@ fieldset {
 
 	#emailMe {
 		margin-left: 30px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.logo {
+		width: 130px;
 	}
 }
