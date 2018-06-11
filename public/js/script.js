@@ -1,39 +1,28 @@
 
-$(document).ready(function () {
-    // Read the cookie and if it's defined scroll to id
-    var scroll = Cookies.get('scroll');
-    if(scroll){
-        scrollToID(scroll, 1000);
-        $.removeCookie('scroll');
-    }
+$(document).ready(function(){
+    var speed = 1000;
 
-    // Handle event onclick, setting the cookie when the href != #
-    $('.nav a').click(function (e) {
+    // check for hash and if div exist... scroll to div
+    var hash = window.location.hash;
+    if($(hash).length) scrollToID(hash, speed); 
+
+    // scroll to div on nav click
+    $('.scroll-link').click(function (e) {
         e.preventDefault();
-        var id = $(this).data('id');
-        var href = $(this).attr('href');
-        if(href === '#'){
-            scrollToID(id, 1000);
-        }else{
-            Cookies.get('scroll', id);
-            window.location.href = href;
-        }
+        var id = $(this).attr('href');
+        if($(id ).length) scrollToID(id, speed);
     });
+})
 
-    // scrollToID function
-    function scrollToID(id, speed) {
-        var offSet = 70;
-        var obj = $('#' + id);
-        if(obj.length){
-          var offs = obj.offset();
-          var targetOffset = offs.top - offSet;
-          $('html,body').animate({ scrollTop: targetOffset }, speed);
-        }
-    }
-    
-    $("#workNav").click(function() {
-    	$('html,body').animate({
-    	    scrollTop: $(".myWork").offset().top},
-    	    'slow');
-    });
+function scrollToID(id, speed) {
+    var offSet = 70;
+    var obj = $(id).offset();
+    var targetOffset = obj.top - offSet;
+    $('html,body').animate({ scrollTop: targetOffset }, speed);
+}
+
+$("#workNav").click(function() {
+	$('html,body').animate({
+	    scrollTop: $(".myWork").offset().top},
+	    'slow');
 });
