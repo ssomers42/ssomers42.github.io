@@ -14,13 +14,13 @@ body, html {
 }
 
 .cchWrapper {
-	background-color: #00BBF0;
+	background-color: #F58A07;
 }
 
 .when2buyWrapper {
 	/*background-color: #428bca;*/
 	/*background-color: #5C6F68;*/
-	background-color: #3D348B;
+	background-color: #00BBF0;
 
 }
 
@@ -33,13 +33,13 @@ body, html {
 }
 
 .yompWrapper {
-	background-color: #F58A07;
+	background-color: #3D348B ;
 
 }
 
 .index-image {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .aboutWrapper p {
@@ -560,6 +560,8 @@ img {
 
 #download {
 	width: 100%;
+	background-color: #00BBF0;
+	border: none;
 }
 
 #contactInfo span:last-child {
@@ -612,6 +614,11 @@ img {
 	font-size: 64px;
     font-family: 'Raleway', sans-serif;
     color: white;
+}
+
+.workType {
+	color: white;
+	margin: 30px 0;
 }
 
 .half-row {
