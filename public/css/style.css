@@ -13,6 +13,10 @@ body, html {
     background-size: cover;
 }
 
+.introBar {
+	background-color: #F58A07 ;
+}
+
 .cchWrapper {
 	background-color: #F58A07;
 }
@@ -465,6 +469,11 @@ li:last-child a{
     border-width: 2px !important;
 }
 
+.btn-primary {
+	background-color: #00BBF0 !important;
+	border: none !important;
+}
+
 .bullet {
 	margin-left: -20px;
 }
@@ -511,6 +520,11 @@ img {
 .aboutImage {
 	max-height:none;
 	border-radius: 10px;
+}
+
+.large-image {
+	max-height: none !important;
+	max-width: 100%;
 }
 
 #contactInfo {
