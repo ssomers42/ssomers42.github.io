@@ -48,10 +48,17 @@
 			    </div>
 				<div class="collapse navbar-collapse" id="navbar-contents">
 					<ul class="nav navbar-nav">
-						<li><a href= "/index.html#work" class="navbar-item">Work </a></li>
-						<li><a href= "/resume.html" class="navbar-item">Resume</a></li>
+						<div class="dropdown">
+							<li><a href= "/index.html#work" class="dropdown navbar-item">Work </a></li>
+							<div class="dropdown-content">
+								<a href="#">CCH-Tool </a>
+								<a href="#">When2Buy </a>
+								<a href="#"> YOMP </a>
+							</div>
+						</div>
+						<!-- <li><a href= "/resume.html" class="navbar-item">Resume</a></li> -->
 						<li><a href= "/about.html" class="active navbar-item">About</a></li>
-						<li><a href= "/contact.html" class="navbar-item">Contact</a></li>
+						<!-- <li><a href= "/contact.html" class="navbar-item">Contact</a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -60,12 +67,32 @@
 			<div class="row aboutRow">
 				<div class="col-lg-5" align="center">
 					<img src="public/images/hike.JPG" class="aboutImage">
+			<a id="download" class="btn btn-primary" href="Stephan Somers Resume.pdf" download="Stephan_Somers_Resume.pdf" onclick="resumeClick();"> View Resume </a>
 				</div>
 				<div class="col-lg-7">
 					<p>Hello! <br><br>I'm Stephan, I'm a UX/UI designer. I will be graduating from UC San Diego with a B.S. in Cognitive Science with an emphasis in Human Computer Interaction during the summer of 2018. I am originally from a small mountain town named Tehachapi. I attended Bakersfield College for two years and then transferred to UCSD during the Fall of 2016. My hobbies include surfing, rock climbing, gaming, hiking, and pretty much anything else outdoors. <br><br>My strong desire to help others led me to start my college career on the pre-med path. As with most college experiences, I tried a little bit of everything and had a lot of new experiences. Among many things, I learned how to surf, became a wilderness guide, competed on the school's NCAA rowing team, and took classes I never thought I would.  It wasn't until I took an intro to design course that I realized UX was my true passion. I discovered that the human-centered process of design was another way for me to fulfill my need to help others.<br><br> Since then I have done everything I can to get more involved in the design community, such as becoming a member of Design at UCSD, participating in and winning two design sprints, doing nonprofit design work through UCSD's Global Ties program, and working as a UX/UI designer for the startup YOMP. These core experiences have given me experiences in a variety of roles doing a variety of tasks including leading project teams, conducting user research, wireframing, rapid prototyping, making interactive prototypes, developing web sites with HTML, CSS, and JS, and much more. These experiences grew my love for user experience and I'm in the process of turning my passion into my career.<br><br><span style="font-style: italic;">-Stephan </span></p>
-					<a align="" href="/cch-tool.html" class="btn aboutButton" id="workButton" onclick="w2bCtaClick();"> Check Out My Work </a>
+					<a align="" href="/cch-tool.html" class="btn aboutButton" id="workButton" onclick="w2bCtaClick();"> View Case Study </a>
 				</div>
 			</div>
+			<div class="contactWrapper"> 
+  <form id="contact" action="https://formspree.io/ssomers42@gmail.com" method="post" class="row-padding">
+    <h1>Send me a message</h1>
+    <fieldset>
+      <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" name="emailAddress" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." name="message" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      <br class="break">
+      <span id="emailMe"> ...Or email me at <a href="mailto: ssomers@ucsd.edu">ssomers@ucsd.edu</a></span>
+    </fieldset>
+  </form>
+	</div>
 		</div>
 		<footer>
 			<div class="container-fluid indexFooter aboutFooter"> 
