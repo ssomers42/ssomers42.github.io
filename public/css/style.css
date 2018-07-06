@@ -154,6 +154,10 @@ li:last-child a{
 	outline:none !important;
 }
 
+a.dropdown.navbar-item {
+	text-decoration: none !important;
+}
+
 .navbar-header {
 	width: 100%;
 	display:flex;
