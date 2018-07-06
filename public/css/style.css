@@ -149,7 +149,7 @@ li:last-child a{
 	color: #00BBF0;
 }
 
-.nav>li>a:focus, .dropdown>li>a {
+.nav>li>a:focus, a.dropdown.navbar-item:focus {
 	background-color: transparent !important;
 	outline:none !important;
 }
@@ -246,6 +246,11 @@ a.active {
 border-bottom: solid 4px #00BBF0;
 }
 
+.dropdown-content>.active {
+	border-bottom: none;
+	border-left: solid 4px #00BBF0;
+}
+
 @media screen and (max-width: 767px) {
 	.aboutWrapper p {
 		font-size: 24px;
@@ -324,7 +329,7 @@ border-bottom: solid 4px #00BBF0;
 		display: block;	
 	}
 	
-	.nav>li>a, .dropdown>li>a {
+	.nav>li>a, a.dropdown.navbar-item {
 	padding: 0 !important;
 	}
 
@@ -658,7 +663,7 @@ img {
 }
 
 @media screen and (max-width: 374px) {
-	.nav>li>a, .dropdown>li>a {
+	.nav>li>a, a.dropdown.navbar-item {
 		font-size: 22px;
 	}
 }
