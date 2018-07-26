@@ -19,6 +19,12 @@
             	  'event_label': 'yompClick',
             	});
             };
+            function uiClick() {
+            	gtag('event', 'uiClick', {
+            	  'event_category': 'click',
+            	  'event_label': 'uiClick',
+            	});
+            };
             function ctaClick() {
             	gtag('event', 'indexCtaClick', {
             	  'event_category': 'click',
@@ -128,6 +134,19 @@
 					<h2 class="workType"> Startup - UX/UI Design </h2>
 					<p>I am currently working as a UI/UX designer for YOMP. YOMP is a mobile application that provides a new way to live, exclusively for college students. YOMP will be launching at UCSD and SDSU Fall 2018.  </p>
 					<a class="btn btn-pill workButton" href="https://www.yomp.cool/" onclick="yompClick();"> Check it out here!</a>
+				</div>
+			</div>
+		</div>
+		<div class="uiWrapper">
+			<div class="row-padding row half-row">
+				<div class="col-lg-6 center-content">
+					<img class="work-image index-image" src="public/images/uiChallenge.png">
+				</div>
+				<div class="col-lg-6 yompContent">
+					<h1 class="workTitle bold"> Daily UI Challenge </h1>
+					<h2 class="workType"> Personal Project - UI Design </h2>
+					<p> I am in the process of completing a 100 day UI design challenge to improve and refine my UI design skills. Each design is restricted to 1 hour. </p>
+					<a class="btn btn-pill workButton" href="https://www.behance.net/gallery/68285665/DailyUI-Challenge" onclick="uiClick();"> Follow my progress </a>
 				</div>
 			</div>
 		</div>

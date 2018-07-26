@@ -28,6 +28,10 @@ body, html {
 
 }
 
+.uiWrapper {
+	background-color: #8B3434;
+}
+
 .resumeWrapper {
 	background-color: ##fdfdfd;
 }
