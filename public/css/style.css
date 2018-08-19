@@ -132,7 +132,7 @@ body, html {
 
 
 .filler {
-	height: 140px;
+	height: 200px;
 }
 
 .check {
@@ -867,7 +867,7 @@ fieldset {
 	#navbar-contents {
 		padding-top: 0;
 	}
-	
+
 	.logo {
 		width: 130px;
 	}
