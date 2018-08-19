@@ -7,7 +7,7 @@ body, html {
 .introWrapper {
 	/*min-height: 560px;*/
 	height: calc(90vh - 18px);
-	background-image: url(../images/sprint2.png);
+	background-image: url(../images/sprint2-min.png);
     background-position-x: 50%;
     background-position-y:30%;
     background-size: cover;
@@ -51,19 +51,26 @@ body, html {
 }
 
 .aboutWrapper p {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	color: black;
+}
+
+.indexTitle {
+	font-size: 36px;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .indexTitleText {
 	text-align:center;
 	color:white;
-	font-size: 50px;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #intro {
-	margin-top: 100px;
+	margin-top: 20px;
 }
 
 #name {
@@ -75,7 +82,7 @@ body, html {
 }
 
 #description {
-	margin-bottom: 2%;
+	margin-bottom: 5em;
 }
 
 .resumeSection h2 {
@@ -124,9 +131,22 @@ body, html {
 }
 
 
+.filler {
+	height: 140px;
+}
+
+.check {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
 .navbar {
-/*	position: absolute !important;
-*/	top:0;
+	z-index: 1000;
+	position: fixed !important;
+	top:0;
+	width: 100%;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
 
 #navbar-contents {
@@ -144,10 +164,10 @@ body, html {
 
 }
 
-li:last-child a{
+/*li:last-child a{
 	margin-right: 0;
 }
-
+*/
 .navbar-item:hover {
 	background-color: transparent !important;
 	color: #00BBF0;
@@ -173,6 +193,7 @@ a.dropdown.navbar-item {
 	display: flex;
 	text-align: center;
 	margin-top: 0;
+	z-index: 1001;
 }
 
 @media screen and (min-width: 768px) {
@@ -316,17 +337,22 @@ border-bottom: solid 4px #00BBF0;
 	.aboutPic {
 		padding: 0 !important;
 	}
-	.navbar-item {
+/*	.navbar-item {
 		margin: 0 .25em;
-	}
+	}*/
 	.logo {
 		width: 200px;
 	}
 }
 
 @media screen and (max-width: 525px) {
+
+	.indexTitle {
+		font-size: 28px;
+	}
+
 	.indexTitleText {
-		font-size: 38px;
+		font-size: 18px;
 	}
 
 	#workButton {
@@ -653,6 +679,7 @@ img {
 .workType {
 	color: white;
 	margin: 30px 0;
+	font-family: 'Montserrat-bold', sans-serif;
 }
 
 .half-row {
@@ -837,6 +864,10 @@ fieldset {
 }
 
 @media screen and (max-width: 900px) {
+	#navbar-contents {
+		padding-top: 0;
+	}
+	
 	.logo {
 		width: 130px;
 	}
