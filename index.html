@@ -13,22 +13,46 @@
 		  });
 		</script>
 		<script type="text/javascript">
-            function yompClick() {
+            var yompClick = function(url) {
             	gtag('event', 'yompClick', {
             	  'event_category': 'click',
             	  'event_label': 'yompClick',
+            	  'transport_type': 'beacon',
+            	  'event_callback': function()
+            	  {document.location = url;}
             	});
             };
-            function uiClick() {
+            var when2buyClick = function(url) {
+            	gtag('event', 'when2buyClick', {
+            	  'event_category': 'click',
+            	  'event_label': 'when2buyClick',
+            	  'transport_type': 'beacon',
+            	  'event_callback': function()
+            	  {document.location = url;}
+            	});
+            };
+            var uiClick = function(url) {
             	gtag('event', 'uiClick', {
             	  'event_category': 'click',
             	  'event_label': 'uiClick',
+            	  'transport_type': 'beacon',
+            	  'event_callback': function()
+            	  {document.location = url;}
             	});
             };
-            function ctaClick() {
-            	gtag('event', 'indexCtaClick', {
+            var ctaClick = function(url) {
+            	gtag('event', 'ctaClick', {
             	  'event_category': 'click',
-            	  'event_label': 'indexCtaClick',
+            	  'event_label': 'ctaClick',
+            	  'transport_type': 'beacon',
+            	  'event_callback': function()
+            	  {document.location = url;}
+            	});
+            };
+             function resumeClick {
+            	gtag('event', 'resumeClick', {
+            	  'event_category': 'click',
+            	  'event_label': 'resumeClick',
             	});
             };
     </script>
@@ -93,8 +117,8 @@
 			</div>
 			<h1 class="indexTitleText row-padding" id="description"> I'm a <span id="name"> UX Designer</span> that has a passion for designing efficient and exciting user experiences that can have a positive impact on the world. </h1>
 			<div class="center-content">
-				<button class="button workButton" id="workButton"><a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7" onclick="ctaClick();"> Check out a case study </a></button>
-				<button class="button workButton" id="workButtonSmall"><a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7" onclick="ctaClick();"> Check out a case study </a></button>
+				<button class="button workButton" id="workButton"><a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7" onclick="ctaClick('https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7'); return false;"> Check out a case study </a></button>
+				<button class="button workButton" id="workButtonSmall"><a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7" onclick="ctaClick('https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7'); return false;"> Check out a case study </a></button>
 			</div>
 		</section>
 		
@@ -127,7 +151,7 @@
 					<h1 class="workTitle bold"> When2Buy  </h1>
 					<h2 class="workType"> Personal Project - UX Design & Development </h2>
 					<p>This was a personal project where I practiced the entire design process from paper prototyping to A/B testing an interactive prototype with Google Analytics. This responsive web application is a shareable shopping list used to simplify the group shopping experience for college students.</p>
-					<a class="btn btn-pill workButton" href="https://medium.com/@ssomers_44381/case-study-on-when2buy-2805180ffd17"> Full Case Study</a>
+					<a class="btn btn-pill workButton" href="https://medium.com/@ssomers_44381/case-study-on-when2buy-2805180ffd17" onclick="when2buyClick('https://medium.com/@ssomers_44381/case-study-on-when2buy-2805180ffd17'); return false;"> Full Case Study</a>
 				</div>
 			</div>
 		</div>
@@ -140,7 +164,7 @@
 					<h1 class="workTitle bold"> YOMP </h1>
 					<h2 class="workType"> Startup - UX/UI Design </h2>
 					<p>I am currently working as a UI/UX designer for YOMP. YOMP is a mobile application that provides a new way to live, exclusively for college students. YOMP will be launching at UCSD and SDSU Fall 2018.  </p>
-					<a class="btn btn-pill workButton" href="https://www.yomp.cool/" onclick="yompClick();"> Check it out here!</a>
+					<a class="btn btn-pill workButton" href="https://www.yomp.cool/" onclick="yompClick('https://www.yomp.cool/'); return false"> Check it out here!</a>
 				</div>
 			</div>
 		</div>
@@ -153,7 +177,7 @@
 					<h1 class="workTitle bold"> Daily UI Challenge </h1>
 					<h2 class="workType"> Personal Project - UI Design </h2>
 					<p> I am in the process of completing a 100 day UI design challenge to improve and refine my UI design skills. Each design is restricted to 1 hour. </p>
-					<a class="btn btn-pill workButton" href="https://www.behance.net/gallery/68285665/DailyUI-Challenge" onclick="uiClick();"> Follow my progress </a>
+					<a class="btn btn-pill workButton" href="https://www.behance.net/gallery/68285665/DailyUI-Challenge" onclick="uiClick('https://www.behance.net/gallery/68285665/DailyUI-Challenge'); return false;"> Follow my progress </a>
 				</div>
 			</div>
 		</div>
