@@ -69,7 +69,6 @@ body, html {
 
 .indexTitle {
 	font-size: 36px;
-	font-size: 2.85vw;
 	color:white;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -78,7 +77,6 @@ body, html {
 	text-align:center;
 	color:white;
 	font-size: 20px;
-	font-size: 1.6vw;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -107,7 +105,6 @@ body, html {
 	margin-top: 0;
 	font-family: 'Lato', sans-serif;
 	font-size: 24px !important;
-	font-size: 1.9vw !important;
 	padding: 10px;
 	border-radius: 10px;
 	border: 0;
@@ -505,21 +502,9 @@ border-bottom: solid 4px #00BBF0;
 	height: 100%;
 }
 
-.cchContent p {
+.content p {
 	color: white;
-	font-size: 24px;
-    font-family: 'Raleway', sans-serif;
-}
-
-.when2buyContent p {
-	color: white;
-	    font-size: 24px;
-    font-family: 'Raleway', sans-serif;
-}
-
-.yompContent p {
-	color: white;
-	    font-size: 24px;
+	font-size: 24px !important;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -696,6 +681,7 @@ img {
 .workType {
 	color: white;
 	margin: 30px 0;
+	font-size: 30px !important;
 	font-family: 'Montserrat-bold', sans-serif;
 }
 
@@ -887,6 +873,27 @@ fieldset {
 
 	.logo {
 		width: 130px;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.indexTitleText {
+		font-size: 1.6vw !important;
+	} 
+	.workButton, #workButton {
+		font-size: 1.9vw !important;
+	}
+	.indexTitle {
+		font-size: 2.85vw !important;
+	}
+	.workTitle {
+		font-size: 5vw !important;
+	}
+	.workType {
+		font-size: 2.4vw !important;
+	}
+	.content p{
+		font-size: 1.9vw !important;
 	}
 }
 
