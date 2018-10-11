@@ -22,10 +22,10 @@
             	  {document.location = url;}
             	});
             };
-            var when2buyClick = function(url) {
-            	gtag('event', 'when2buyClick', {
+            var slantClick = function(url) {
+            	gtag('event', 'slantClick', {
             	  'event_category': 'click',
-            	  'event_label': 'when2buyClick',
+            	  'event_label': 'slantClick',
             	  'transport_type': 'beacon',
             	  'event_callback': function()
             	  {document.location = url;}
@@ -98,7 +98,7 @@
 							<li><a href= "/index.html#work" class="dropdown navbar-item active">Work </a></li>
 							<div class="dropdown-content">
 								<a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7">CCH-Tool </a>
-								<a href="https://medium.com/@ssomers_44381/case-study-on-when2buy-2805180ffd17">When2Buy </a>
+								<a href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644">Slant </a>
 								<a href="https://www.yomp.cool/"> YOMP </a>
 								<a href="https://www.behance.net/gallery/70504455/DailyUI-Challenge"> UI Challenge </a>
 							</div>
@@ -129,8 +129,21 @@
 		<p> My Work </p>
 	</div>
 	<div class="workWrapper" id="work">
+		<div class="when2buyWrapper">
+									<span class="center-content workCaret"></span>
+			<div class="row-padding row half-row">
+				<div class="col-lg-6 center-content">
+					<img class="work-image index-image" src="public/images/slant.png">
+				</div>
+				<div class="col-lg-6 content">
+					<h1 class="workTitle bold"> Slant  </h1>
+					<h2 class="workType"> Startup - Co-Founder, UX/UI Design </h2>
+					<p>I am the co-founder and UX designer for Slant which recently completed the UC San Diego Converge Incubator after being selected from a pool of more than 70 startups. Slant is a mobile application for civic engagment.</p>
+					<a class="btn btn-pill workButton" href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644" onclick="slantClick('https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644'); return false;"> Full Case Study</a>
+				</div>
+			</div>
+		</div>
 		<div class="cchWrapper">
-						<span class="center-content workCaret"></span>
 			<div class="row-padding row half-row rowSafari ">
 				<div class="col-lg-6 center-content ">
 					<img class="work-image index-image" src="public/images/cchScreen1.png">
@@ -143,19 +156,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="when2buyWrapper">
-			<div class="row-padding row half-row">
-				<div class="col-lg-6 center-content">
-					<img class="work-image index-image" src="public/images/when2buy.png">
-				</div>
-				<div class="col-lg-6 content">
-					<h1 class="workTitle bold"> When2Buy  </h1>
-					<h2 class="workType"> Personal Project - UX Design & Development </h2>
-					<p>This was a personal project where I practiced the entire design process from paper prototyping to A/B testing an interactive prototype with Google Analytics. This responsive web application is a shareable shopping list used to simplify the group shopping experience for college students.</p>
-					<a class="btn btn-pill workButton" href="https://medium.com/@ssomers_44381/case-study-on-when2buy-2805180ffd17" onclick="when2buyClick('https://medium.com/@ssomers_44381/case-study-on-when2buy-2805180ffd17'); return false;"> Full Case Study</a>
-				</div>
-			</div>
-		</div>
+		
 		<div class="yompWrapper">
 			<div class="row-padding row half-row">
 				<div class="col-lg-6 center-content">
