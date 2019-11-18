@@ -1,144 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120237753-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
 
-		  gtag('config', 'UA-120237753-1', {
-		    'page_title' : 'homepage',
-		  });
-		</script>
-		<script type="text/javascript">
-            var yompClick = function(url) {
-            	gtag('event', 'yompClick', {
-            	  'event_category': 'click',
-            	  'event_label': 'yompClick',
-            	  'transport_type': 'beacon',
-            	  'event_callback': function()
-            	  {document.location = url;}
-            	});
-            };
-            var slantClick = function(url) {
-            	gtag('event', 'slantClick', {
-            	  'event_category': 'click',
-            	  'event_label': 'slantClick',
-            	  'transport_type': 'beacon',
-            	  'event_callback': function()
-            	  {document.location = url;}
-            	});
-            };
-            var uiClick = function(url) {
-            	gtag('event', 'uiClick', {
-            	  'event_category': 'click',
-            	  'event_label': 'uiClick',
-            	  'transport_type': 'beacon',
-            	  'event_callback': function()
-            	  {document.location = url;}
-            	});
-            };
-            var ctaClick = function(url) {
-            	gtag('event', 'ctaClick', {
-            	  'event_category': 'click',
-            	  'event_label': 'ctaClick',
-            	  'transport_type': 'beacon',
-            	  'event_callback': function()
-            	  {document.location = url;}
-            	});
-            };
-             function resumeClick() {
-            	gtag('event', 'resumeClick', {
-            	  'event_category': 'click',
-            	  'event_label': 'resumeClick',
-            	});
-            };
-    </script>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<link rel="stylesheet" type="text/css" href="public/css/style.css">
-		<title>Stephan's Portfolio</title>
-		<!-- JS -->
-		<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-		<script type="text/javascript" src="public/js/script.js" async></script>
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link href="public/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="shortcut icon" href="idea.ico" />
-		<!-- Google Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120237753-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	</head>
-<body>	
+		gtag('config', 'UA-120237753-1', {
+			'page_title': 'homepage',
+		});
+	</script>
+	<script type="text/javascript">
+		var yompClick = function (url) {
+			gtag('event', 'yompClick', {
+				'event_category': 'click',
+				'event_label': 'yompClick',
+				'transport_type': 'beacon',
+				'event_callback': function () { document.location = url; }
+			});
+		};
+		var slantClick = function (url) {
+			gtag('event', 'slantClick', {
+				'event_category': 'click',
+				'event_label': 'slantClick',
+				'transport_type': 'beacon',
+				'event_callback': function () { document.location = url; }
+			});
+		};
+		var uiClick = function (url) {
+			gtag('event', 'uiClick', {
+				'event_category': 'click',
+				'event_label': 'uiClick',
+				'transport_type': 'beacon',
+				'event_callback': function () { document.location = url; }
+			});
+		};
+		var ctaClick = function (url) {
+			gtag('event', 'ctaClick', {
+				'event_category': 'click',
+				'event_label': 'ctaClick',
+				'transport_type': 'beacon',
+				'event_callback': function () { document.location = url; }
+			});
+		};
+		function resumeClick() {
+			gtag('event', 'resumeClick', {
+				'event_category': 'click',
+				'event_label': 'resumeClick',
+			});
+		};
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<title>Stephan's Portfolio</title>
+	<!-- JS -->
+	<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script type="text/javascript" src="public/js/script.js" async></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="idea.ico" />
+	<!-- Google Fonts  -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<body>
 	<div class="introWrapper">
-		
-			<nav class="navbar container-fluid">
-				<div class="check container-fluid">
-				<div class="header-wrapper">
-					<div class= "logo">
+
+		<nav class="navbar container-fluid">
+			<div class="check container-fluid">
+				<div class="navbar" id="navbar-contents">
+					<div class="logo navbar-item">
 						<a href="/index.html">
-							<img src="public/images/logo2.png">
+							<img src="public/images/logo1.png">
 						</a>
 					</div>
-					<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-contents" aria-expanded="false">
-				      	<span class="icon-bar"></span>
-	        			<span class="icon-bar"></span>
-	        			<span class="icon-bar"></span>
-				    </button> -->
-		    </div>
-				<div class="navbar" id="navbar-contents">
 					<ul class="nav navbar-nav">
 						<div class="dropdown">
-							<li><a href= "/index.html#work" class="dropdown navbar-item active">Work </a></li>
+							<li><a href="/index.html#work" class="dropdown navbar-item active">Work </a></li>
 							<div class="dropdown-content">
-								<a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7">CCH-Tool </a>
+								<a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7">CCH-Tool
+								</a>
 								<a href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644">Slant </a>
 								<a href="https://www.yomp.cool/"> YOMP </a>
 								<a href="https://www.behance.net/gallery/70504455/DailyUI-Challenge"> UI Challenge </a>
 							</div>
 						</div>
 						<!-- <li><a href= "/resume.html" class="navbar-item">Resume</a></li> -->
-						<li><a href= "/about.html" class="navbar-item">About</a></li>
+						<li><a href="/about.html" class="navbar-item">About</a></li>
 						<!-- <li><a href= "/contact.html" class="navbar-item">Contact</a></li> -->
 					</ul>
 				</div>
-				</div>
-			</nav>
-			<div class="filler">
 			</div>
+		</nav>
+		<div class="filler">
+		</div>
 		<section class="TitleWrapper">
 			<div class="center-content">
-				<h1 class="indexTitle" id="intro"> Hi, I'm <span id="name"> Stephan Somers</span> </h1> 
+				<h1 class="indexTitle" id="intro"> Hi, I'm <span id="name"> Stephan Somers</span> </h1>
 			</div>
-			<h1 class="indexTitleText row-padding" id="description"> I'm a <span id="name"> UX Designer</span> that has a passion for designing efficient and exciting user experiences that can have a positive impact on the world. </h1>
+			<h1 class="indexTitleText row-padding" id="description"> I'm a <span id="name"> UX Designer</span> that has
+				a passion for designing efficient and exciting user experiences that can have a positive impact on the
+				world. </h1>
 			<div class="center-content">
-				<a id="workButton" class="button workButton" href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"> Check out a case study </a>
+				<a id="workButton" class="button workButton"
+					href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"> Check out a
+					case study </a>
 			</div>
 		</section>
-		
+
 		<!-- <button class="button btn" id="workButton" href="#"> Check out my work here </button> -->
-	</div>  <!--end introWrapper-->
+	</div>
+	<!--end introWrapper-->
 	<div class="center-content myWork">
 		<p> My Work </p>
 	</div>
 	<div class="workWrapper" id="work">
 		<div class="when2buyWrapper">
-									<span class="center-content workCaret"></span>
+			<span class="center-content workCaret"></span>
 			<div class="row-padding row half-row">
 				<div class="col-lg-6 center-content">
 					<img class="work-image index-image" src="public/images/slant.png">
 				</div>
 				<div class="col-lg-6 content">
-					<h1 class="workTitle bold"> Slant  </h1>
+					<h1 class="workTitle bold"> Slant </h1>
 					<h2 class="workType"> Startup - Co-Founder, UX/UI Design </h2>
-					<p>I am the co-founder and UX designer for Slant which recently completed the UC San Diego Converge Incubator after being selected from a pool of more than 70 startups. Slant is a mobile application for civic engagment.</p>
-					<a class="btn btn-pill workButton" href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644"> Full Case Study</a>
+					<p>I am the co-founder and UX designer for Slant which recently completed the UC San Diego Converge
+						Incubator after being selected from a pool of more than 70 startups. Slant is a mobile
+						application for civic engagment.</p>
+					<a class="btn btn-pill workButton"
+						href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644"> Full Case Study</a>
 				</div>
 			</div>
 		</div>
@@ -150,12 +152,17 @@
 				<div class="col-lg-6 content">
 					<h1 class="workTitle bold"> CCH Market Classification Tool </h1>
 					<h2 class="workType"> Nonprofit - UX Design & Development </h2>
-					<p>I designed and developed the front-end for this responsive web application for a non-profit client, San Diego's Center for Community Health. This tool is being used to classify community markets in low-income areas of San Diego to determine how much monetary aid each should receive.</p>
-					<a class="btn btn-pill workButton" href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"> Full Case Study </a>
+					<p>I designed and developed the front-end for this responsive web application for a non-profit
+						client, San Diego's Center for Community Health. This tool is being used to classify community
+						markets in low-income areas of San Diego to determine how much monetary aid each should receive.
+					</p>
+					<a class="btn btn-pill workButton"
+						href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"> Full Case
+						Study </a>
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="yompWrapper">
 			<div class="row-padding row half-row">
 				<div class="col-lg-6 center-content">
@@ -164,8 +171,11 @@
 				<div class="col-lg-6 content">
 					<h1 class="workTitle bold"> YOMP </h1>
 					<h2 class="workType"> Startup - UX/UI Design </h2>
-					<p>I am currently working as a UI/UX designer for YOMP. YOMP is a mobile application that provides a new way to live, exclusively for college students. YOMP will be launching at UCSD and SDSU Fall 2018.  </p>
-					<a class="btn btn-pill workButton" href="https://www.yomp.cool/" onclick="yompClick('https://www.yomp.cool/'); return false"> Check it out here!</a>
+					<p>I am currently working as a UI/UX designer for YOMP. YOMP is a mobile application that provides a
+						new way to live, exclusively for college students. YOMP will be launching at UCSD and SDSU Fall
+						2018. </p>
+					<a class="btn btn-pill workButton" href="https://www.yomp.cool/"
+						onclick="yompClick('https://www.yomp.cool/'); return false"> Check it out here!</a>
 				</div>
 			</div>
 		</div>
@@ -177,27 +187,36 @@
 				<div class="col-lg-6 content">
 					<h1 class="workTitle bold"> Daily UI Challenge </h1>
 					<h2 class="workType"> Personal Project - UI Design </h2>
-					<p> I am in the process of completing a 30 day UI design challenge to improve and refine my UI design skills. Each design is restricted to 1 hour. </p>
-					<a class="btn btn-pill workButton" href="https://www.behance.net/gallery/70504455/DailyUI-Challenge" onclick="uiClick('https://www.behance.net/gallery/70504455/DailyUI-Challenge'); return false;"> Follow my progress </a>
+					<p> I am in the process of completing a 30 day UI design challenge to improve and refine my UI
+						design skills. Each design is restricted to 1 hour. </p>
+					<a class="btn btn-pill workButton" href="https://www.behance.net/gallery/70504455/DailyUI-Challenge"
+						onclick="uiClick('https://www.behance.net/gallery/70504455/DailyUI-Challenge'); return false;">
+						Follow my progress </a>
 				</div>
 			</div>
 		</div>
 	</div>
-		<footer>
-			<div class="container-fluid indexFooter"> 
-				<div class="footer-content">
-					<a class="footer-content" href="https://www.linkedin.com/in/ssomers42/">LinkedIn</a>
-					<a class="footer-content" href="mailto:ssomers@ucsd.edu">Email</a>
-					<a class="footer-content" href="Stephan Somers Resume.pdf" download="Stephan_Somers_Resume.pdf" onclick="resumeClick();">Resume </a><br>
-				</div>
-				<div class="signature">
-					<p style="color:white" align="center"> © Stephan Somers 2018 </p>
-				</div>
+	<footer>
+		<div class="container-fluid indexFooter">
+			<div class="footer-content">
+				<a class="footer-content" href="https://www.linkedin.com/in/ssomers42/">LinkedIn</a>
+				<a class="footer-content" href="mailto:ssomers@ucsd.edu">Email</a>
+				<a class="footer-content" href="Stephan Somers Resume.pdf" download="Stephan_Somers_Resume.pdf"
+					onclick="resumeClick();">Resume </a><br>
 			</div>
-		</footer>
-<!-- Bootstrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="public/js/navBar.js"></script>
+			<div class="signature">
+				<p style="color:white" align="center"> © Stephan Somers 2018 </p>
+			</div>
+		</div>
+	</footer>
+	<!-- Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="public/js/navBar.js"></script>
 </body>
+
 </html>
