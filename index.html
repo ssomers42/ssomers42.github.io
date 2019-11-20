@@ -14,34 +14,34 @@
 		});
 	</script>
 	<script type="text/javascript">
-		var yompClick = function (url) {
-			gtag('event', 'yompClick', {
+		var card1Click = function (url) {
+			gtag('event', 'card1Click', {
 				'event_category': 'click',
-				'event_label': 'yompClick',
+				'event_label': 'card1Click',
 				'transport_type': 'beacon',
 				'event_callback': function () { document.location = url; }
 			});
 		};
-		var slantClick = function (url) {
-			gtag('event', 'slantClick', {
+		var card2Click = function (url) {
+			gtag('event', 'card2Click', {
 				'event_category': 'click',
-				'event_label': 'slantClick',
+				'event_label': 'card2Click',
 				'transport_type': 'beacon',
 				'event_callback': function () { document.location = url; }
 			});
 		};
-		var uiClick = function (url) {
-			gtag('event', 'uiClick', {
+		var card3Click = function (url) {
+			gtag('event', 'card3Click', {
 				'event_category': 'click',
-				'event_label': 'uiClick',
+				'event_label': 'card3Click',
 				'transport_type': 'beacon',
 				'event_callback': function () { document.location = url; }
 			});
 		};
-		var ctaClick = function (url) {
-			gtag('event', 'ctaClick', {
+		var card4Click = function (url) {
+			gtag('event', 'card4Click', {
 				'event_category': 'click',
-				'event_label': 'ctaClick',
+				'event_label': 'card4Click',
 				'transport_type': 'beacon',
 				'event_callback': function () { document.location = url; }
 			});
@@ -59,148 +59,168 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<link rel="stylesheet" type="text/css" href="public/css/style.css">
 	<title>Stephan's Portfolio</title>
-	<!-- JS -->
-	<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-	<script type="text/javascript" src="public/js/script.js" async></script>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Tab Icon -->
 	<link rel="shortcut icon" href="idea.ico" />
 	<!-- Google Fonts  -->
-	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div class="introWrapper">
-
-		<nav class="navbar container-fluid">
-			<div class="check container-fluid">
-				<div class="navbar" id="navbar-contents">
-					<div class="logo navbar-item">
-						<a href="/index.html">
-							<img src="public/images/logo1.png">
-						</a>
-					</div>
-					<ul class="nav navbar-nav">
-						<div class="dropdown">
-							<li><a href="/index.html#work" class="dropdown navbar-item active">Work </a></li>
-							<div class="dropdown-content">
-								<a class="scroll-link" href="#kast"> Kast </a>
-								<a class="scroll-link" href="#cch">CCH-Tool
-								</a>
-								<a class="scroll-link" href="#slant">Slant </a>
-							</div>
-						</div>
-						<!-- <li><a href= "/resume.html" class="navbar-item">Resume</a></li> -->
-						<li><a href="/about.html" class="navbar-item">About</a></li>
-						<!-- <li><a href= "/contact.html" class="navbar-item">Contact</a></li> -->
-					</ul>
-				</div>
+	<div class="max-width">
+		<!-- Nav start -->
+		<nav id="nav-bar" style="display:none;">
+			<a href="index.html" id="logo" class="nav-content"> Stephan <br> Somers </a>
+			<div class="nav-link-container">
+				<a href="index.html" class="nav-content nav-link active"> Work</a>
+				<a href="#" class="nav-content nav-link inactive" > About/Contact </a>
 			</div>
 		</nav>
-		<div class="filler">
-		</div>
-		<section class="TitleWrapper">
-			<div class="center-content">
-				<h1 class="indexTitle" id="intro"> Hi, I'm <span id="name"> Stephan Somers</span> </h1>
-			</div>
-			<h1 class="indexTitleText row-padding" id="description"> I'm a <span id="name"> UX Designer</span> that has
-				a passion for designing efficient and exciting user experiences that can have a positive impact on the
-				world. </h1>
-			<div class="center-content">
-				<a id="workButton" class="button workButton"
-					href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"> Check out a
-					case study </a>
-			</div>
-		</section>
-
-		<!-- <button class="button btn" id="workButton" href="#"> Check out my work here </button> -->
-	</div>
-	<!--end introWrapper-->
-	<div class="center-content myWork">
-		<p> My Work </p>
-	</div>
-	<div id="kast" class="uiWrapper">
-		<div class="row-padding row half-row">
-			<span class="center-content workCaret"></span>
-
-			<div class="col-lg-6 center-content">
-				<img class="work-image index-image" src="public/images/kast.png">
-			</div>
-			<div class="col-lg-6 content">
-				<h1 class="workTitle bold"> Kast </h1>
-				<h2 class="workType"> UX Design </h2>
-				<p> I currently work on the desktop, mobile, and web experiences for Kast, a platform bringing people
-					together through digital
-					watch parties. </p>
-				<a class="btn btn-pill workButton scroll-link" href="#cch"> Coming Soon </a>
-			</div>
-		</div>
-	</div>
-
-	<div class="cchWrapper" id="cch">
-		<div class="row-padding row half-row rowSafari ">
-			<div class="col-lg-6 center-content ">
-				<img class="work-image index-image" src="public/images/cchScreen1.png">
-			</div>
-			<div class="col-lg-6 content">
-				<h1 class="workTitle bold"> CCH Market Classification Tool </h1>
-				<h2 class="workType"> Nonprofit - UX Design & Development </h2>
-				<p>I designed and developed the front-end for this responsive web application for a non-profit
-					client, San Diego's Center for Community Health. This tool is being used to classify community
-					markets in low-income areas of San Diego to determine how much monetary aid each should receive.
+		<!-- Nav End -->
+		<!-- Header Start -->
+		<header>
+			<div class="intro-text">
+				<h1 id="hello-text">Hi there! I'm Stephan.</h1>
+				<h2 id="hello-support-text">I’m a UX designer based in San Diego.</h2>
+				<p id="intro-body">I solve human-centered problems in simple, efficient, and delightful ways. When I’m
+					not geeking out
+					about design, you can find me tinkering with code, climbing rocks, or <span
+						style="font-style: italic">attempting </span> to catch some
+					waves.
 				</p>
-				<a class="btn btn-pill workButton"
-					href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"> Full Case
-					Study </a>
+				<p class="intro-learn-more"> I currently work full-time designing desktop and mobile experiences at
+					<a href="https://www.kast.gg" class="inactive" target="_blank">Kast</a>. <br>
+					<a href="/about.html" class="project-cta inactive" target="_blank" style="display:none;">Learn more &rarr;</a></p>
 			</div>
-		</div>
-	</div>
-	<div class="workWrapper" id="slant">
-		<div class="when2buyWrapper">
-			<div class="row-padding row half-row">
-				<div class="col-lg-6 center-content">
-					<img class="work-image index-image" src="public/images/slant.png">
+			<div class="intro-image">
+				<img src="public/images/Header image.svg">
+			</div>
+		</header>
+		<!-- Header End -->
+		<!-- My Work Start -->
+		<div class="my-work">
+			<p id="my-work-title" class="inactive">My Work</p>
+			<div class="card-container">
+				<div id="card-1" class="card">
+					<div class="card-padding">
+						<div class="card-title">
+							<a href="https://www.kast.gg" target="_blank" onclick="card1Click();">
+								<p class="project-name"> Kast</p>
+							</a>
+							<a href="https://www.kast.gg" target="_blank" onclick="card1Click();">
+								<subtitle class="project-role inactive">UX Design</subtitle>
+							</a>
+						</div>
+						<a href="https://www.kast.gg" target="_blank" onclick="card1Click();">
+							<subtitle class="project-description">Digital watch parties for desktop & mobile</subtitle>
+						</a>
+						<a class="project-cta inactive" href="https://www.kast.gg" target="_blank"
+							onclick="card1Click();"> Check It Out
+							&rarr;</span></a>
+					</div>
+					<a style="display: flex;" href="https://www.kast.gg" target="_blank" onclick="card1Click();"><img
+							class="project-image" src="public/images/card-1-image.svg"></a>
 				</div>
-				<div class="col-lg-6 content">
-					<h1 class="workTitle bold"> Slant </h1>
-					<h2 class="workType"> Startup - Co-Founder, UX Design </h2>
-					<p>I am the co-founder and UX designer for Slant which recently completed the UC San Diego Converge
-						Incubator after being selected from a pool of more than 70 startups. Slant is a mobile
-						application for civic engagment.</p>
-					<a class="btn btn-pill workButton"
-						href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644"> Full Case Study</a>
+				<div id="card-2" class="card">
+					<div class="card-padding">
+						<div class="card-title">
+							<a href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644" target="_blank"
+								onclick="card2Click();">
+								<p class="project-name"> Slant</p>
+							</a>
+							<a href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644" target="_blank"
+								onclick="card2Click();">
+								<subtitle class="project-role inactive">Co-Founder</subtitle>
+							</a>
+						</div>
+						<a href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644" target="_blank"
+							onclick="card2Click();">
+							<subtitle class="project-description">Civic engagement app bridging the divide between
+								representatives & their constituents.</subtitle>
+						</a>
+						<a class="project-cta inactive" target="_blank"
+							href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644" target="_blank"
+							onclick="card2Click();"> View Case Study
+							&rarr;</span></a>
+					</div>
+					<a style="display: flex;" href="https://medium.com/@ssomers_44381/case-study-of-slant-166f2837d644"
+						target="_blank" onclick="card2Click();">
+						<img class="project-image" src="public/images/card-2-image.svg">
+					</a>
 				</div>
 			</div>
-		</div>
+			<div class="card-container">
+				<div id="card-3" class="card">
+					<div class="card-padding">
+						<div class="card-title">
+							<a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"
+								target="_blank" onclick="card3Click();">
+								<p class="project-name"> CCH Community Market</p>
+							</a>
+							<a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"
+								target="_blank" onclick="card3Click();">
+								<subtitle class="project-role inactive">UX Design & Development</subtitle>
+							</a>
+						</div>
+						<a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"
+							target="_blank" onclick="card3Click();">
+							<subtitle class="project-description">Classification & data visualization tool helping a San
+								Diego non-profit eliminate food insecurity.</subtitle>
+						</a>
+						<a class="project-cta inactive" target="_blank"
+							href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"
+							onclick="card3Click();">
+							<span>View Case Study &rarr;</span>
+						</a>
+					</div>
+					<a href="https://medium.com/@ssomers_44381/cch-market-classification-tool-7112fcbe1bf7"
+						target="_blank" onclick="card3Click();">
 
-	</div>
-	<footer>
-		<div class="container-fluid indexFooter">
+						<img style="display: flex;" class="project-image" src="public/images/card-3-image.svg">
+					</a>
+				</div>
+				<div id="card-4" class="card">
+					<div class="card-padding">
+						<div class="card-title">
+							<a href="https://www.yomp.club" onclick="card4Click()">
+								<p class="project-name"> YOMP</p>
+							</a>
+							<a href="https://www.yomp.club" onclick="card4Click()">
+								<subtitle class="project-role inactive">UX Consultant</subtitle>
+							</a>
+						</div>
+						<a href="https://www.yomp.club" onclick="card4Click()">
+							<subtitle class="project-description">Building a community around festival fashion.
+							</subtitle>
+						</a>
+						<a class="project-cta inactive" target="_blank" href="https://www.yomp.club"> Check It Out
+							&rarr;</span></a>
+					</div>
+					<a style="display:flex" href="https://www.yomp.club" onclick="card4Click()">
+						<img class="project-image" src="public/images/card-4-image.svg">
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- My Work End -->
+		<!-- Footer Here -->
+		<footer>
 			<div class="footer-content">
-				<a class="footer-content" href="https://www.linkedin.com/in/ssomers42/">LinkedIn</a>
+				<a class="footer-content" href="https://www.linkedin.com/in/ssomers42/" target="_blank">LinkedIn</a>
 				<a class="footer-content" href="mailto:ssomers@ucsd.edu">Email</a>
-				<a class="footer-content" href="Stephan Somers Resume.pdf" download="Stephan_Somers_Resume.pdf"
-					onclick="resumeClick();">Resume </a><br>
+				<a class="footer-content" href="Stephan Somers Resume.pdf"
+					onclick="resumeClick();" target="_blank">Resume </a><br>
 			</div>
 			<div class="signature">
-				<p style="color:white" align="center"> © Stephan Somers 2018 </p>
 			</div>
-		</div>
-	</footer>
-	<!-- Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
-	<script src="public/js/navBar.js"></script>
+			<span style="color: #000; margin:auto"> © Stephan Somers 2018 </span>
+		</footer>
+	</div>
 </body>
+
+
+
+
 
 </html>
