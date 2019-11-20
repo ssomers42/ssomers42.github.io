@@ -18,7 +18,7 @@
 		});
 	</script>
 	<script type="text/javascript">
-		var card1Click = function (url) {
+		function card1Click() {
 			gtag('event', 'card1Click', {
 				'event_category': 'click',
 				'event_label': 'card1Click',
@@ -26,7 +26,7 @@
 				'event_callback': function () { document.location = url; }
 			});
 		};
-		var card2Click = function (url) {
+		function card2Click() {
 			gtag('event', 'card2Click', {
 				'event_category': 'click',
 				'event_label': 'card2Click',
@@ -34,7 +34,7 @@
 				'event_callback': function () { document.location = url; }
 			});
 		};
-		var card3Click = function (url) {
+		function card3Click() {
 			gtag('event', 'card3Click', {
 				'event_category': 'click',
 				'event_label': 'card3Click',
@@ -42,7 +42,7 @@
 				'event_callback': function () { document.location = url; }
 			});
 		};
-		var card4Click = function (url) {
+		function card4Click() {
 			gtag('event', 'card4Click', {
 				'event_category': 'click',
 				'event_label': 'card4Click',
