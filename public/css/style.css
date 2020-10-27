@@ -279,6 +279,11 @@ footer {
     margin-left: 16px;
     margin-right: 16px;
   }
+
+  .nav-link {
+    margin-left: 40px;
+  }
+
   header {
     margin-top: 40px;
   }
@@ -321,7 +326,4 @@ footer {
   .about-content {
     flex-direction: column;
   }
-}
-
-@media (max-width: 720px) {
 }
