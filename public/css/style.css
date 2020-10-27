@@ -90,19 +90,13 @@ header {
   margin-left: 0px;
 }
 
-#logo {
-  font-family: 'Roboto', sans-serif;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 .inactive {
   color: var(--light-gray);
   font-weight: 400;
 }
 
 .active {
-  font-weight: 500;
+  font-weight: 400;
 }
 /* End Nav Bar */
 
@@ -315,7 +309,9 @@ footer {
 
   #logo {
     display: none;
+    font-weight: 400 !important;
   }
+
   .about-title {
     margin-top: 40px;
     justify-content: center;
