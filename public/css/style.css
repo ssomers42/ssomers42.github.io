@@ -23,7 +23,6 @@ a {
 
 a:hover {
   color: var(--dark-gray);
-  font-weight: 700;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
 }
