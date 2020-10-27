@@ -92,15 +92,18 @@ header {
 }
 
 #logo {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .inactive {
   color: var(--light-gray);
+  font-weight: 400;
 }
 
 .active {
-  font-weight: 700;
+  font-weight: 500;
 }
 /* End Nav Bar */
 
@@ -121,7 +124,7 @@ header {
 }
 
 .intro-text {
-  flex: 0 1 57%;
+  flex: 0 1 58%;
 }
 
 .intro-learn-more {
@@ -168,6 +171,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  column-gap: 24px;
 }
 
 .card-title {
@@ -198,6 +202,9 @@ header {
   display: block;
   font-weight: 700;
   transition: 300ms;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--light-gray);
 }
 
 .project-cta:hover {
@@ -213,7 +220,11 @@ header {
 /* End My Work */
 
 /* Start About */
-.about {
+.about-title {
+  margin-top: 15vh;
+  font-weight: 700;
+}
+.about-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -221,6 +232,7 @@ header {
 
 .about-copy {
   flex: 0 0 45%;
+  font-size: 16px;
 }
 
 .about-image {
@@ -229,7 +241,9 @@ header {
   width: 50%;
   height: auto;
   margin: auto;
+  margin-top: 24px;
   margin-bottom: 24px;
+  border-radius: 3px;
 }
 
 .about-column-2 {
@@ -247,7 +261,7 @@ footer {
   justify-content: center;
   vertical-align: middle;
   position: relative;
-  margin-top: 128px;
+  margin-top: 24px;
   bottom: 0;
   width: 100%;
   color: #000;
@@ -263,7 +277,7 @@ footer {
 /* End Footer */
 
 /* Media Queries */
-@media (max-width: 1279px) {
+@media (max-width: 780px) {
   .intro-image {
     display: none;
   }
@@ -274,14 +288,6 @@ footer {
   }
   header {
     margin-top: 40px;
-  }
-  #logo {
-    display: none;
-  }
-
-  #nav-bar {
-    justify-content: space-around;
-    margin-top: 24px;
   }
 
   #my-work-title {
@@ -303,4 +309,24 @@ footer {
   .footer-content {
     padding: 16px;
   }
+  #nav-bar {
+    justify-content: space-around;
+    margin-top: 24px;
+  }
+
+  #logo {
+    display: none;
+  }
+  .about-title {
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 720px) {
 }

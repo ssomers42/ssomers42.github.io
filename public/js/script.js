@@ -16,8 +16,8 @@ $(document).ready(function(){
     function scrollToID(id, speed) {
         var offSet = 70;
         var obj = $(id).offset();
-        var targetOffset = obj.top - offSet;
-        $('html,body').animate({ scrollTop: targetOffset }, speed);
+        var Offset = obj.top - offSet;
+        $('html,body').animate({ scrollTop: Offset }, speed);
     }
 
     $("#workNav").click(function() {
