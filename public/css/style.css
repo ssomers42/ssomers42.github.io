@@ -303,6 +303,16 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .card-title {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  subtitle {
+    min-height: auto;
+  }
+
   .intro-text {
     flex: 0 1 auto;
   }
