@@ -185,8 +185,11 @@ header {
 }
 
 .project-role {
+  display: flex;
+  align-items: center;
   text-align: right;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .project-description {
@@ -309,7 +312,7 @@ footer {
     gap: 16px;
   }
 
-  subtitle {
+  .project-role {
     min-height: auto;
   }
 
